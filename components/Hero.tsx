@@ -34,14 +34,6 @@ export function Hero() {
           Agentes de voz, agentes de WhatsApp y CRM automatizado para negocios que necesitan
           responder rápido y vender mejor — sin contratar un call center.
         </p>
-        <div className="hero-actions">
-          <a href="#contacto" className="btn btn-primary">
-            Quiero un sistema para mi negocio
-          </a>
-          <a href="#contacto" className="btn btn-ghost">
-            Quiero construir con FLAMIA
-          </a>
-        </div>
       </div>
     </header>
   );

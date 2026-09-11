@@ -1,5 +1,6 @@
 import { stack } from "@/lib/data";
 import { Reveal } from "./Reveal";
+import { LogoMarquee } from "./LogoMarquee";
 
 export function Stack() {
   return (
@@ -23,6 +24,9 @@ export function Stack() {
               </div>
             ))}
           </div>
+        </Reveal>
+        <Reveal>
+          <LogoMarquee />
         </Reveal>
       </div>
     </section>

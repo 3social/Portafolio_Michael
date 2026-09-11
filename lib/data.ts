@@ -56,7 +56,7 @@ export const caseStudies: CaseStudy[] = [
     label: "Infraestructura para inmobiliarias",
     title: "El sistema nervioso detrás de cada lead.",
     description:
-      "Pipelines de GoHighLevel, matching de propiedades por WhatsApp (PropertyMatch) y automatizaciones n8n que conectan cada punto de contacto — para que ningún lead se pierda entre el anuncio y la firma.",
+      "Basado en GoHighLevel, el CRM #1 para equipos comerciales: pipelines, matching de propiedades por WhatsApp (PropertyMatch) y automatizaciones n8n que conectan cada punto de contacto — para que ningún lead se pierda entre el anuncio y la firma.",
     features: [
       { k: "CRM", v: "GoHighLevel" },
       { k: "Automatización", v: "n8n" },
@@ -69,10 +69,33 @@ export const caseStudies: CaseStudy[] = [
 export type StackGroup = { category: string; tools: string };
 
 export const stack: StackGroup[] = [
-  { category: "Automatización & CRM", tools: "n8n · Make · GoHighLevel · Odoo" },
-  { category: "IA & Agentes", tools: "Vapi · OpenAI · API Cloud" },
-  { category: "Infraestructura", tools: "Easypanel (VPS propio) · Supabase · Next.js" },
-  { category: "Datos & Marketing", tools: "Windsor.ai · Power BI · SQL · Meta Ads" },
+  { category: "Automatización & CRM", tools: "n8n · Make · GoHighLevel · Odoo · Slack · Notion" },
+  { category: "IA & Agentes", tools: "Vapi · OpenAI · Twilio · API Cloud de WhatsApp" },
+  { category: "Infraestructura", tools: "Vercel · Render · VPS propio (Easypanel) · Supabase · Next.js" },
+  { category: "Datos & Marketing", tools: "Google · Windsor.ai · Power BI · SQL · Meta Ads" },
+];
+
+/** Marcas del stack para el carrusel infinito. `icon` apunta a brandPaths. */
+export type BrandLogo = { name: string; icon?: string };
+
+export const stackLogos: BrandLogo[] = [
+  { name: "GoHighLevel" },
+  { name: "n8n", icon: "n8n" },
+  { name: "Make", icon: "Make" },
+  { name: "Twilio" },
+  { name: "Vapi" },
+  { name: "OpenAI" },
+  { name: "WhatsApp", icon: "WhatsApp" },
+  { name: "Slack" },
+  { name: "Notion", icon: "Notion" },
+  { name: "Vercel", icon: "Vercel" },
+  { name: "Render", icon: "Render" },
+  { name: "VPS propio" },
+  { name: "Google", icon: "Google" },
+  { name: "Supabase", icon: "Supabase" },
+  { name: "Odoo", icon: "Odoo" },
+  { name: "Meta Ads", icon: "Meta Ads" },
+  { name: "Next.js" },
 ];
 
 export const networkNodes = [

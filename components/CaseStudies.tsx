@@ -1,5 +1,4 @@
 import { caseStudies, CaseStudy } from "@/lib/data";
-import { OrreryDecor } from "./OrreryDecor";
 import { Reveal } from "./Reveal";
 import { VoiceVisual } from "./visuals/VoiceVisual";
 import { ChatVisual } from "./visuals/ChatVisual";
@@ -40,18 +39,6 @@ export function CaseStudies() {
   return (
     <section id="sistemas">
       <div className="wrap">
-        <div className="section-head-stage">
-          <OrreryDecor set="channels" />
-          <div className="section-head">
-            <span className="kicker">Tres canales, un mismo sistema</span>
-            <h2>Cada negocio necesita responder distinto. Nosotros construimos el canal correcto.</h2>
-            <p>
-              No vendemos &quot;chatbots&quot;. Diseñamos cómo tu negocio escucha, califica y agenda
-              — por voz, por WhatsApp o por el CRM que lo conecta todo.
-            </p>
-          </div>
-        </div>
-
         {caseStudies.map((study) => (
           <CaseRow key={study.id} study={study} />
         ))}
