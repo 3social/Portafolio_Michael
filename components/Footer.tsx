@@ -2,8 +2,8 @@ import { brandPaths } from "@/lib/brandPaths";
 import { WHATSAPP_DISPLAY, whatsappLink } from "@/lib/contact";
 
 const socials = [
-  { name: "Facebook", href: "https://www.facebook.com/flamiagroup" },
-  { name: "Instagram", href: "https://www.instagram.com/flamiagroup" },
+  { name: "Facebook", href: "https://www.facebook.com/mikeiacr/" },
+  { name: "Instagram", href: "https://www.instagram.com/mikecr_ia/" },
   { name: "LinkedIn", href: "https://www.linkedin.com/company/flamiagroup" },
 ];
 

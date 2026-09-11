@@ -342,7 +342,7 @@
   }
   .case:first-child{border-top:none;padding-top:0;}
   @media(max-width:860px){ .case{grid-template-columns:1fr;} }
-  .case-reverse .case-visual{order:2;}
+  .case-reverse .case-visual{order:-1;}
   @media(max-width:860px){ .case-reverse .case-visual{order:0;} }
   .case-label{
     font-family:'Fraunces',serif;
@@ -643,12 +643,20 @@
 /* ---------- SCROLL REVEAL (Level-1 dynamism) ---------- */
 .reveal{
   opacity:0;
-  transform:translateY(24px);
-  transition:opacity 0.7s ease, transform 0.7s ease;
+  transform:translateY(36px);
+  filter:blur(6px);
+  transition:opacity 0.8s cubic-bezier(0.22,1,0.36,1),
+             transform 0.8s cubic-bezier(0.22,1,0.36,1),
+             filter 0.8s ease;
+  transition-delay:var(--reveal-delay, 0s);
 }
 .reveal.is-visible{
   opacity:1;
   transform:translateY(0);
+  filter:blur(0);
+}
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;filter:none;transition:none;}
 }
 
 /* ---------- CURSOR-FOLLOW GLOW on buttons ---------- */

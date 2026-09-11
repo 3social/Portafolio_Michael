@@ -36,6 +36,7 @@ export const caseStudies: CaseStudy[] = [
       { k: "CRM destino", v: "GoHighLevel" },
     ],
     visual: "voice",
+    reverse: true,
   },
   {
     id: "whatsapp",
@@ -49,7 +50,6 @@ export const caseStudies: CaseStudy[] = [
       { k: "Verticales", v: "Estética, salud, ventas" },
     ],
     visual: "chat",
-    reverse: true,
   },
   {
     id: "infra",
@@ -63,6 +63,7 @@ export const caseStudies: CaseStudy[] = [
       { k: "Matching", v: "PropertyMatch (WhatsApp + IA)" },
     ],
     visual: "flow",
+    reverse: true,
   },
 ];
 
