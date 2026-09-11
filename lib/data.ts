@@ -66,15 +66,6 @@ export const caseStudies: CaseStudy[] = [
   },
 ];
 
-export type StackGroup = { category: string; tools: string };
-
-export const stack: StackGroup[] = [
-  { category: "Automatización & CRM", tools: "n8n · Make · GoHighLevel · Odoo · Slack · Notion" },
-  { category: "IA & Agentes", tools: "Vapi · OpenAI · Twilio · API Cloud de WhatsApp" },
-  { category: "Infraestructura", tools: "Vercel · Render · VPS propio (Easypanel) · Supabase · Next.js" },
-  { category: "Datos & Marketing", tools: "Google · Windsor.ai · Power BI · SQL · Meta Ads" },
-];
-
 /** Marcas del stack para el carrusel infinito. `icon` apunta a brandPaths. */
 export type BrandLogo = { name: string; icon?: string };
 

@@ -1,4 +1,3 @@
-import { stack } from "@/lib/data";
 import { Reveal } from "./Reveal";
 import { LogoMarquee } from "./LogoMarquee";
 
@@ -13,16 +12,6 @@ export function Stack() {
             </span>
             <h2 style={{ color: "#fff" }}>El stack que sostiene todo esto</h2>
             <p>Herramientas elegidas por lo que resuelven, no por moda.</p>
-          </div>
-        </Reveal>
-        <Reveal>
-          <div className="stack-grid">
-            {stack.map((group) => (
-              <div className="stack-item" key={group.category}>
-                <div className="cat">{group.category}</div>
-                <div className="tools">{group.tools}</div>
-              </div>
-            ))}
           </div>
         </Reveal>
         <Reveal>
