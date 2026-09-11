@@ -1,12 +1,8 @@
-"use client";
-
-import { useState } from "react";
 import { Reveal } from "./Reveal";
-import { ContactForm } from "./ContactForm";
+import { WhatsAppPanel } from "./WhatsAppPanel";
+import { whatsappLink } from "@/lib/contact";
 
 export function Closing() {
-  const [selectedPath, setSelectedPath] = useState<"negocio" | "talento">("negocio");
-
   return (
     <section className="closing" id="contacto">
       <div className="wrap">
@@ -25,13 +21,16 @@ export function Closing() {
                 Real estate, estética, salud y servicios que necesitan responder rápido, calificar
                 leads y agendar sin depender de más personal.
               </p>
-              <button
-                type="button"
+              <a
                 className="btn btn-primary"
-                onClick={() => setSelectedPath("negocio")}
+                href={whatsappLink(
+                  "Hola Michael, tengo un negocio y quiero un sistema conversacional con FLAMIA."
+                )}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Agendar una llamada
-              </button>
+              </a>
             </div>
           </Reveal>
 
@@ -42,21 +41,22 @@ export function Closing() {
                 Desarrolladores, closers y agencias que quieren construir sistemas conversacionales
                 con nosotros en LATAM y EE.UU. hispano.
               </p>
-              <button
-                type="button"
+              <a
                 className="btn btn-ghost"
                 style={{ color: "var(--ink-text)", borderColor: "var(--line)" }}
-                onClick={() => setSelectedPath("talento")}
+                href={whatsappLink("Hola Michael, quiero construir con FLAMIA.")}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Escribir a FLAMIA
-              </button>
+              </a>
             </div>
           </Reveal>
         </div>
 
         <Reveal>
           <div className="closing-grid" style={{ marginTop: "24px", gridTemplateColumns: "1fr" }}>
-            <ContactForm key={selectedPath} defaultPath={selectedPath} />
+            <WhatsAppPanel />
           </div>
         </Reveal>
       </div>

@@ -36,12 +36,11 @@
   /* ---------- NAV ---------- */
   nav{
     position:fixed;top:0;left:0;right:0;z-index:50;
-    display:flex;justify-content:space-between;align-items:center;
+    display:flex;justify-content:flex-end;align-items:center;
     padding:24px 32px;
     mix-blend-mode:difference;
     color:#fff;
   }
-  .logo{font-family:'Fraunces',serif;font-size:1.15rem;font-weight:600;}
   .nav-links{display:flex;gap:28px;font-size:0.9rem;}
   @media(max-width:600px){ .nav-links{display:none;} }
 
@@ -549,57 +548,32 @@ html, body{
   background:var(--paper);
 }
 
-/* ---------- CONTACT FORM ---------- */
-.contact-form{
+/* ---------- WHATSAPP CONTACT ---------- */
+.whatsapp-panel{
   display:flex;
   flex-direction:column;
-  gap:14px;
-}
-.form-row{
-  display:flex;
+  align-items:flex-start;
   gap:10px;
-  flex-wrap:wrap;
-  margin-bottom:4px;
+  background:linear-gradient(135deg, rgba(108,79,242,0.06), rgba(108,79,242,0));
+  border-color:rgba(108,79,242,0.28);
 }
-.path-pill{
-  display:flex;
+.whatsapp-panel h3{margin-bottom:0;}
+.whatsapp-panel p{margin-bottom:10px;max-width:52ch;}
+.whatsapp-btn{
+  display:inline-flex;
   align-items:center;
-  gap:6px;
-  padding:8px 14px;
-  border-radius:100px;
-  border:1px solid var(--line);
-  font-size:0.85rem;
-  color:var(--ink-text);
-  opacity:0.7;
-  cursor:pointer;
-  transition:all 0.2s ease;
-}
-.path-pill.active{
-  border-color:var(--violet);
-  color:var(--violet);
-  opacity:1;
-  background:rgba(108,79,242,0.06);
-}
-.path-pill input{
-  accent-color:var(--violet);
-}
-.form-input{
-  width:100%;
-  padding:12px 14px;
-  border-radius:12px;
-  border:1px solid var(--line);
-  background:var(--paper);
-  color:var(--ink-text);
-  font-family:inherit;
-  font-size:0.95rem;
-  resize:vertical;
-}
-.form-input:focus{
-  outline:none;
-  border-color:var(--violet);
-}
-.contact-form button{
-  align-self:flex-start;
+  gap:10px;
   border:none;
   cursor:pointer;
+}
+.whatsapp-btn svg{
+  width:20px;
+  height:20px;
+  flex:0 0 auto;
+}
+.whatsapp-number{
+  font-family:'Fraunces',serif;
+  font-size:1.15rem;
+  letter-spacing:0.01em;
+  color:var(--violet);
 }

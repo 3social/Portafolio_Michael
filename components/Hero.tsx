@@ -23,7 +23,7 @@ export function Hero() {
           </div>
         </div>
         <span className="portrait-name">Michael González Álvarez</span>
-        <span className="portrait-role">Fundador, FLAMIA</span>
+        <span className="portrait-role">Co-fundador, FLAMIA</span>
 
         <h1>
           Construimos la infraestructura <em>conversacional</em>
